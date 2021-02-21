@@ -22,7 +22,6 @@ confirm_login();?>
         
            
         if(empty($posttitle)){
-            
             $_SESSION["errormsg"] = "This field Can't be empty";
              redirect_to("addnewposts.php");
         }
