@@ -8,8 +8,8 @@ confirm_login();?>
 
 
 <?php if(isset($_POST["Submit"])){
-    $posttitle=$_POST["posttitle"];
-    $cat=$_POST["cat"];
+     $posttitle=$_POST["posttitle"];
+     $cat=$_POST["cat"];
      $slug=$_POST["slugtitle"];
      $slug =str_replace(' ', '-', strtolower($slug));
      $image=$_FILES["image"]["name"];
@@ -17,8 +17,8 @@ confirm_login();?>
      $post= $_POST["fullpost"];
      $admin=$_SESSION["Username"];
      date_default_timezone_set("Asia/Kolkata");
-    $time = time();
-    $timedate = strftime("%B-%d-%y-%H-%M-%S",$time);
+     $time = time();
+     $timedate = strftime("%B-%d-%y-%H-%M-%S",$time);
         
            
         if(empty($posttitle)){
