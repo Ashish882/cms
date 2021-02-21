@@ -1,0 +1,248 @@
+.navbar-dark {
+     background-color: #512DA8;
+}
+
+.stories-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px 30px;
+}
+
+.stories-item {
+  display: grid;
+  grid-template-rows: minmax(80px, auto) 1fr auto;
+}
+
+.stories-item header {
+  background: none;
+  height: auto;
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.stories-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.3;
+  align-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  align-items: end;
+}
+
+.stories-item h2 > small {
+  font-size: 0.8em;
+  font-weight: normal;
+  text-align: right;
+}
+
+.stories-item a {
+  color: #111;
+  text-decoration-color: transparent;
+}
+
+.stories-item a:hover,
+.stories-item a:focus {
+  text-decoration-color: #0f0;
+}
+
+.stories-item .img-wrapper {
+  position: relative;
+}
+
+.stories-item .img-wrapper .tag {
+  margin: 0;
+  right: 11px;
+  bottom: 30px;
+  transition: all 200ms ease-in-out;
+}
+
+.stories-item .tag:hover {
+  background: #a2ffa2;
+  color: #005a00;
+}
+
+.stories-item .img-wrapper:hover .img {
+  background-color: #00ff00;
+  background-size: 110% auto;
+}
+
+.stories-item .meta {
+  padding: 15px 5px 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stories-item .meta a {
+  font-weight: 500;
+}
+
+.stories-item .meta .date {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.stories-item.ad .tag {
+  font-family: "IBM Plex Mono", monospace;
+  background: #f5ec43;
+  color: #002200;
+  font-weight: bold;
+  padding: 6px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.stories-item.ad footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.stories-item.ad .meta {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stories-item.ad .meta small {
+  color: #444;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.search-results .section-header {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 40px;
+  padding: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 30px;
+  background-color: transparent;
+  color: #111;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.search-results #hits {
+  min-height: 300px;
+}
+
+.search-results .section-header span {
+  margin-left: 20px;
+}
+
+.search-results .ais-SearchBox-loadingIndicator:not([hidden]) {
+  display: flex;
+  margin: 0;
+  align-self: center;
+  position: absolute;
+  right: 0;
+}
+
+.search-results .no-results {
+  font-size: 27px;
+}
+
+.search-results .section-header input {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.ais-SearchBox-form {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+}
+
+.ais-SearchBox-form > button {
+  display: flex;
+  padding: 20px;
+}
+
+.ais-SearchBox-form > button > svg {
+  width: 12px;
+  height: 12px;
+}
+
+.ais-SearchBox-submit {
+  position: absolute;
+  right: 50px;
+}
+
+.ais-SearchBox-form > button > svg.ais-SearchBox-submitIcon {
+  width: 14px;
+  height: 14px;
+}
+
+#stats {
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.ais-Pagination-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.ais-Pagination-link {
+  padding: 0.3rem 0.6rem;
+  display: block;
+  border: 1px solid #c4c8d8;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #003b00;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+}
+
+.ais-Pagination-item + .ais-Pagination-item {
+  margin-left: 0.3rem;
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link {
+  color: #fff;
+  background-color: #003b00;
+  border-color: #003b00;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-list {
+    grid-gap: 15px 30px;
+  }
+
+  .ais-SearchBox-form {
+    align-items: center;
+  }
+
+  .ais-SearchBox-form > button {
+    padding: 15px;
+  }
+
+  .search-results .section-header {
+    margin-bottom: 20px;
+  }
+
+  .ais-SearchBox-submit {
+    right: 40px;
+  }
+
+  .search-results .section-header input {
+    width: 300px;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .ais-Pagination-list {
+    flex-wrap: wrap;
+  }
+}

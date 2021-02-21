@@ -1,0 +1,166 @@
+#mc_embed_signup {
+  display: grid;
+  grid-gap: 20px;
+  align-content: center;
+  max-width: 580px;
+  margin: 50px auto;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Calibri Light,Roboto,sans-serif;
+}
+
+#mc-embedded-subscribe-form {
+  display: grid;
+  grid-gap: 20px;
+}
+
+div#mc_embed_signup div.mce_inline_error {
+  background: transparent;
+  color: #6B0505;
+  margin-bottom: 0;
+}
+
+.mc-field-group {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.mc-field-group input {
+  background-color: #eeeeee;
+  padding: 0.75em 1em;
+  box-shadow: 0;
+  border-radius: 2px;
+  border: 2px solid #eeeeee;
+  font-size: 16px;
+}
+
+.mc-field-group input:focus {
+  outline: none;
+  border-color: #bababa;
+}
+
+.signup-image {
+  width: auto;
+  max-width: 100%;
+  max-height: 100px;
+  margin: 0 auto 20px;
+}
+
+.subscribe-header {
+  text-align: center;
+}
+
+.subscribe-header h2 {
+  font-size: 27px;
+  line-height: 1.3em;
+  margin: 0 0 15px;
+}
+
+.subscribe-header p {
+  margin: 0;
+}
+
+.fields-group {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 480px) {
+  .fields-group {
+    grid-template-columns: 1fr;
+  }
+}
+
+.topics-list > strong {
+  text-transform: uppercase;
+  color: #6e6e6e;
+  font-size: 12px;
+}
+
+.topics-list ul {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 25px;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+  position: absolute;
+  content: "";
+
+  /*Needed for the line-height to take effect*/
+  display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+  height: 16px;
+  width: 16px;
+
+  border: 1px solid;
+  left: 0px;
+
+  /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+   *to vertically center it.
+   */
+  top: 1px;
+}
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+  height: 5px;
+  width: 9px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+
+  transform: rotate(-45deg);
+
+  left: 4px;
+  top: 5px;
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+  outline: #00ff00 auto 5px;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+.submit-btn .button {
+  font-size: 16px;
+  border: 2px solid #003b00;
+  font-weight: 700;
+  background: #00ff00;
+  color: #003b00;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}

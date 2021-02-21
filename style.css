@@ -1,0 +1,38 @@
+.navbar-dark {
+     background-color: #53eb31;
+     	
+}
+ .brand {
+    color: #eb190e;
+}
+
+.fieldinfos{
+
+    color:#3366ff;
+
+}
+
+.CommentBlock{
+    
+    
+    color: black;
+}
+
+.mya a{
+
+
+	text-decoration: none;
+	background-color: yellow;
+}
+
+.mya small{
+
+background-color: yellow;
+  
+
+
+}
+
+.nav-link {
+color: #1c1a1a !important;
+}

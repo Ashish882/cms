@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^login?$ login.php
+
+RewriteRule ^([a-zA-Z0-9-/]+)$ fullpost.php?slug=$1 [L]
+RewriteRule ^([a-zA-Z0-9-/]+)$ blog.php?category=$1 [L]
+
